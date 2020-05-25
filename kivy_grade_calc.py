@@ -59,3 +59,17 @@ def grade_converter(depth_of_knowledge_grade):
     return grade_percentage
 
 
+def find_average(list_of_grades):
+    """ Calculates the average from a list"""
+    avg = 0
+    for i in list_of_grades:
+        avg += i
+
+    return round(avg / len(list_of_grades), 2)
+
+
+def check_range(grade):
+    if grade <= 4.0:
+        return grade
+    else:
+        return f'{grade} is out of range'
