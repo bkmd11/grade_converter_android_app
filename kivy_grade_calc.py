@@ -54,7 +54,7 @@ def grade_converter(depth_of_knowledge_grade):
         grade_percentage = grade_range_finder(depth_of_knowledge_grade, N_TRADITIONAL_GRADE_RANGE_LIST, N_GRADE_RANGE)
 
     else:
-        grade_percentage = 'DOK grade out of range'
+        grade_percentage = 'GRADE OUT OF RANGE'
 
     return grade_percentage
 
