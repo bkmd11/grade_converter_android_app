@@ -18,6 +18,9 @@ class GradeCalc(BoxLayout):
         except ValueError:
             pass
 
+    def avg_button(self, text_input):
+        pass
+
 
 class GradeCalcApp(App):
     def build(self):

@@ -59,6 +59,18 @@ def grade_converter(depth_of_knowledge_grade):
     return grade_percentage
 
 
+def make_list(string_of_grades):
+    """Converts the string of grades entered into a list and makes it a float"""
+    grade_list = string_of_grades.split()
+
+    count = 0
+    for i in grade_list:
+        grade_list[count] = float(i)
+        count += 1
+
+    return grade_list
+
+
 def find_average(list_of_grades):
     """ Calculates the average from a list"""
     avg = 0
@@ -69,6 +81,7 @@ def find_average(list_of_grades):
 
 
 def check_range(grade):
+    """Assures the grade entered is within the expected range of 0 - 4"""
     if grade <= 4.0:
         return grade
     else:

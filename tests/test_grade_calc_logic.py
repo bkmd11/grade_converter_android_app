@@ -1,5 +1,4 @@
 import unittest
-
 import kivy_grade_calc
 
 
@@ -25,6 +24,13 @@ class TestCheckRange(unittest.TestCase):
         result = kivy_grade_calc.check_range(4.1)
 
         self.assertEqual('4.1 is out of range', result)
+
+
+class TestMakeList(unittest.TestCase):
+    def test_make_list(self):
+        result = kivy_grade_calc.make_list('4.2 3.4 4.2')
+
+        self.assertEqual([4.2, 3.4, 4.2], result)
 
 
 if __name__ == '__main__':
