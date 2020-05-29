@@ -54,14 +54,14 @@ def grade_converter(depth_of_knowledge_grade):
         grade_percentage = grade_range_finder(depth_of_knowledge_grade, N_TRADITIONAL_GRADE_RANGE_LIST, N_GRADE_RANGE)
 
     else:
-        grade_percentage = 'GRADE OUT OF RANGE'
+        grade_percentage = 'Grade is out of range'
 
     return grade_percentage
 
 
 def make_list(string_of_grades):
     """Converts the string of grades entered into a list and makes it a float"""
-    grade_list = string_of_grades.split()
+    grade_list = string_of_grades.split(', ')
 
     count = 0
     for i in grade_list:

@@ -25,10 +25,20 @@ class TestCheckRange(unittest.TestCase):
 
         self.assertEqual('4.1 is out of range', result)
 
+    def test_check_range_type_float(self):
+        result = kivy_grade_calc.check_range(3.6)
+
+        self.assertIsInstance(result, float)
+
+    def test_check_range_type_string(self):
+        result = kivy_grade_calc.check_range(4.1)
+
+        self.assertIsInstance(result, str)
+
 
 class TestMakeList(unittest.TestCase):
     def test_make_list(self):
-        result = kivy_grade_calc.make_list('4.2 3.4 4.2')
+        result = kivy_grade_calc.make_list('4.2, 3.4, 4.2')
 
         self.assertEqual([4.2, 3.4, 4.2], result)
 

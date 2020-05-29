@@ -132,24 +132,27 @@
                 text: "<="
                 color: 1, .7, 0, 1
                 on_press: calculator.backspace_button(grade_input.text)
-        BoxLayout:
-            orientation: "horizontal"
-            size_hint: (1, .35)
-            spacing: 2
-           # padding: 2
-            Button:
-                id: calculate
-                background_normal: ""
-                background_color: 1, .7, 0, 1
-                font_size: .75 * self.height
-                text: "Calculate"
-                color: 0, .3, .9, 1
-                on_press: calculator.calculate_button(grade_input.text)
             Button:
                 id: avg
                 background_normal: ""
                 background_color: 1, .7, 0, 1
                 font_size: .75 * self.height
-                text: "AVG"
+                text: "Avg"
                 color: 0, .3, .9, 1
                 on_press: calculator.avg_button(grade_input.text)
+            Button:
+                background_normal: ""
+                background_color: 0, .3, .9, 1
+                font_size: .75 * self.height
+                text: "SPACE"
+                color: 1, .7, 0, 1
+                on_press: calculator.space_button(grade_input.text)
+               # on_press: grade_input.text += ", "
+            Button:
+                id: calculate
+                background_normal: ""
+                background_color: 1, .7, 0, 1
+                font_size: .75 * self.height
+                text: "Calc"
+                color: 0, .3, .9, 1
+                on_press: calculator.calculate_button(grade_input.text)
