@@ -6,3 +6,4 @@ gradeCalc
 venv/
 .buildozer
 bin/
+.coverage

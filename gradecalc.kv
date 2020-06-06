@@ -19,7 +19,7 @@
                         pos: self.pos
                         size: self.size
                 text: ""
-                font_size: .5 * self.height
+                font_size: .4 * self.height
                 text_size: self.size
                 color: 0, 0, 0, 1
                 halign: "center"
@@ -33,7 +33,7 @@
                         pos: self.pos
                         size: self.size
                 text: ""
-                font_size: .5 * self.height
+                font_size: .4 * self.height
                 text_size: self.size
                 color: 0, 0, 0, 1
                 halign: "right"
@@ -136,23 +136,22 @@
                 id: avg
                 background_normal: ""
                 background_color: 1, .7, 0, 1
-                font_size: .75 * self.height
+                font_size: .6 * self.height
                 text: "Avg"
                 color: 0, .3, .9, 1
                 on_press: calculator.avg_button(grade_input.text)
             Button:
                 background_normal: ""
                 background_color: 0, .3, .9, 1
-                font_size: .75 * self.height
-                text: "SPACE"
+                font_size: .6 * self.height
+                text: "Space"
                 color: 1, .7, 0, 1
                 on_press: calculator.space_button(grade_input.text)
-               # on_press: grade_input.text += ", "
             Button:
                 id: calculate
                 background_normal: ""
                 background_color: 1, .7, 0, 1
-                font_size: .75 * self.height
+                font_size: .6 * self.height
                 text: "Calc"
                 color: 0, .3, .9, 1
                 on_press: calculator.calculate_button(grade_input.text)
